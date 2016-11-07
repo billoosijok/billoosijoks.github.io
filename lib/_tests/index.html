@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TEST</title>
+  <style>
+    #intro {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: pink;
+      text-align: center;
+    }
+    #intro h1 {
+      font-size: 6em;
+    }
+    #arrowup {
+      position: relative;
+      margin: 0 auto;
+      bottom: 0;
+      cursor: pointer;
+    }
+  </style>
+  <script src="../Scripts/jquery-3.1.1.min.js" charset="utf-8"></script>
+</head>
+<body>
+  <header>
+    <div id="intro">
+      <h1>Something Cool</h1>
+      <div id="arrowup">^</div>
+    </div>
+    <nav>
+      <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+      </ul>
+    </nav>
+  </header>
+
+  <script>
+    $(function(){
+      $('#arrowup').click(function(){
+        $(this).parent().animate({
+          "top": "-100%"
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TEST</title>
+	<meta name="viewport" content="width=device-width">
+	<script src='../scripts/jquery.js'></script>
+	<style>
+		* {margin: 0;padding: 0;box-sizing: border-box;}
+		
+		#container {
+			width: 100%;
+			height: 100vh;
+			background: pink;
+			position: fixed;
+			text-align: center;
+			border: 3px solid green;
+		}
+
+		hgroup {
+			position: relative;
+			top: 30%;
+		}
+
+		nav {
+			position: absolute;
+			width: 100%;
+			padding: 10px;
+			bottom: 0;
+		}
+		nav ul {
+			display: flex;
+			justify-content: flex-end;
+		}
+		nav li {
+			font-size: 20px;
+			display: inline-block;
+			margin: auto 10px
+		}
+
+		.main {
+			padding-top: 150px;
+		}
+
+		#content {
+			height: 100vh;
+			margin-bottom: 100px;
+		}
+
+		.shrink {
+			animation-name: shrink;
+			animation-fill-mode: forwards;
+			animation-timing-function: cubic-bezier(.17,.67,0,.98);
+			animation-iteration-count: 1;
+			animation-duration: 0.5s;
+		}
+
+		.start {
+			animation-name: starter;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease-in;
+			animation-iteration-count: 1;
+			animation-duration: 0.5s;
+		}
+
+		@keyframes shrink {
+			0% {
+				height: 100vh;
+				font-size: initial;
+				top: initial;
+			}
+			100% {
+				height: 0vh;
+				font-size: 0;
+				top: -10px;
+			}
+		}
+
+		@keyframes starter {
+			0% {
+				/*height: 80vh;*/
+				top: -200px;
+			}
+
+			100% {
+				/*height: 100vh;*/
+				top: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header id="container" class="start">
+		<hgroup>
+			<h1>Some shitt</h1>
+			<p class="tagline">{a web developer}</p>
+		</hgroup> 
+		<nav id="main-nav">
+		<ul>
+			<li>Home</li>
+			<li>Room</li>
+			<li>Dorm</li>
+		</ul>
+	</nav>
+	</header>
+	
+	<div class="main">
+		<div id='content'>content</div>
+		<div id='content'>More content</div>
+	</div>
+	<script>
+		var con = $('#container');
+		var nav = $('#main-nav');
+		addEventListener('scroll', function(ev) {
+			con.removeClass('start');
+			if(window.scrollY > 0) {
+				nav.css('position', 'fixed');
+				nav.animate({top: 0});
+				con.addClass('shrink');
+			}
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+div.main {
+  max-width: 720px;
+  margin: 50px auto;
+}
+
+.card {
+  border-bottom: 1px solid lightgray;
+  padding: 15px 0;
+}
+
+.card header {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.card main {
+
+}
+
+nav {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+}
+nav a {
+  text-decoration: none;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  color: inherit;
+}
+
+/* SWATCHES */
+.swatch {
+  height: 100px;
+  width: 18%;
+  border-left: 5px solid black;
+  margin-left: 0.5%;
+  display: inline-block;
+  color: black;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+#hE74C3C { background-color: #E74C3C}
+#hECF0F1 { background-color: #ECF0F1}
+#h6FC0ED { background-color: #6FC0ED}
+#h4586BF { background-color: #4586BF}
+#h2C3E50 { background-color: #2C3E50; color: lightgray}
+
+
+@media (max-width: 1200px) {
+  nav {
+    position: static;
+    max-width: 720px;
+    margin: 50px auto;
+  }
+}
