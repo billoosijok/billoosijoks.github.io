@@ -12,9 +12,8 @@
 			width: 100%;
 			height: 100vh;
 			background: pink;
-			position: fixed;
+			position: relative;
 			text-align: center;
-			border: 3px solid green;
 		}
 
 		hgroup {
@@ -67,23 +66,21 @@
 			0% {
 				height: 100vh;
 				font-size: initial;
-				top: initial;
+				top: 0;
 			}
 			100% {
 				height: 0vh;
-				font-size: 0;
-				top: -10px;
+				font-size: 10px;
+				top: -50px;
 			}
 		}
 
 		@keyframes starter {
 			0% {
-				/*height: 80vh;*/
 				top: -200px;
 			}
 
 			100% {
-				/*height: 100vh;*/
 				top: 0;
 			}
 		}
@@ -114,8 +111,10 @@
 		addEventListener('scroll', function(ev) {
 			con.removeClass('start');
 			if(window.scrollY > 0) {
-				nav.css('position', 'fixed');
-				nav.animate({top: 0});
+				nav.css('position', 'fixed').animate({bottom: innerHeight-nav.height()*2},
+					function(){
+						nav.css('top', '0');
+					});
 				con.addClass('shrink');
 			}
 		});
