@@ -6,20 +6,16 @@
 	padding: 10px;
 }
 
-/* PAGE ===== HOME ===== */
-
 /* MARK: Header */
 header.main {
 	box-sizing: border-box;
 	background-color: #E74C3C;
-	height: 100vh;
 	position: relative;
 	text-align: center;
 	color: #2C3E50;
 	overflow: visible !important;
-	font-size: 15px;
-	animation-name: starter;
-	animation-duration: 0.5s;
+	font-size: 9px;
+	height: 110px;
 }
 
 header.main hgroup {
@@ -29,15 +25,18 @@ header.main hgroup {
 header.main h1 {
 	/* This is relative to the font-size of <header>
 		that way it's easier to JavaScript it.*/
-	font-size: 5em; 
+	font-size: 5em;
 }
-
+header.main a {
+	text-decoration: none;
+	color: inherit;
+}
 header.main .tagline {
 	font-family: monospace;
 	font-weight: bold;
 	/* This is relative to the font-size of <header>
 		that way it's easier to JavaScript it.*/
-	font-size: 2em; 
+	font-size: 2em;
 }
 
 @keyframes starter {
@@ -48,11 +47,12 @@ header.main .tagline {
 /*  MARK: Nav */
 nav {
 	position: absolute;
-	bottom: 30px;
+	bottom: -55px;
 	width: 100%;
 	color: #2C3E50;
 	padding: 10px 0;
 	font-size: 22px;
+	transition: font-size 0.2s;
 }
 
 nav ul {
@@ -74,15 +74,29 @@ nav li a {
 	text-decoration: none;
 	color: inherit;
 	padding: 5px;
+	border-bottom: solid 3px rgba(0,0,0,0.0);
 	transition: background-color 0.2s;
+	transition: border-bottom 0.2s;
 }
 
 nav li a:hover {
 	background-color: rgba(0,0,0,0.1); /* tmp */
+	border-bottom: solid 3px rgba(0,0,0,0.1);
 }
 
+nav li a:active {
+	border-bottom: solid 3px #E74C3C;
+}
+
+nav li.current a {
+	border-bottom: solid 3px #E74C3C;
+}
+
+
+
 section {
-	margin: 70px auto; /* tmp */
+	/*margin: 70px auto; /* tmp */
+	padding: 80px 0;
 }
 
 section h2 {
@@ -94,10 +108,13 @@ section main {
 	padding: 20px;
 }
 
-section.latest main {
-	padding: 0;
-	
-	/*-ms-overflow-style: scrollbar;*/
+section.main.panel {
+	padding-top: 80px;
+}
+
+
+section.latest {
+	background-color: #FFFCF4;
 }
 
 section.latest ul {
@@ -105,8 +122,8 @@ section.latest ul {
 	display: flex;
 	justify-content: center;
 	min-width: 400px;
-	-webkit-overflow-scrolling: touch;
 	padding: 0;
+	white-space: nowrap;
 }
 
 section.latest .item {
@@ -147,6 +164,7 @@ section.latest .item .imgContainer::before {
 
 section.latest .item img {
 	width: 100%;
+	vertical-align: top;
 }
 
 section.latest .item .title {
@@ -162,7 +180,7 @@ section.latest .more {
 	display: block;
 	width: 120px;
 	text-align: center;
-	margin: auto;	
+	margin: auto;
 	font-size: 22px;
 }
 
@@ -172,7 +190,14 @@ section.latest .more:hover {
 
 section.about {
 	background-color: #6FC0ED;
+	padding: 50px 0;
 }
+
+section.social {
+	background-color: #ECF0F1;
+	margin: 0;
+}
+
 section.social main {
     text-align: center;
 }
@@ -203,17 +228,68 @@ footer.main {
 	font-size: 0.8em;
 }
 
+
+/* PAGE ===== CONTACT ===== */
+form {
+	max-width: 700px;
+	margin: auto;
+	text-align: center;
+}
+
+section.contactForm {
+	background-color: white;
+	border-top: 1px solid rgba(44,62,80, 0.1);
+	box-shadow: 0 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+/* PAGE ===== ABOUT ===== */
+.about section.main.panel {
+	background-color: #6FC0ED;
+}
+
+.works h3 {
+	text-align: center;
+}
+
+.works section.main.panel section {
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+.works section.main.panel section:last-child {
+	border-bottom: none;
+}
+
 @media (max-width: 500px) {
 	header.main {
-		font-size: 14px;
+		font-size: 8px;
+		/*overflow: hidden;*/
 	}
 
+	nav {
+		font-size: 19px;
+	}
 	nav ul{
 		justify-content: space-around;
 	}
-	section.latest ul {
+	.scroll-wrapper {
+		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
+		margin: auto -30px;
 	}
 	
+	form .half {
+		width: 95%;
+		margin-right: auto;
+	}
 
+	section.latest ul {
+		justify-content: flex-start;
+	}
+
+}
+
+@media (max-width: 310px) {
+	nav {
+		bottom: -80px
+	}
 }

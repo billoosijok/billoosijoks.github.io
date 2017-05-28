@@ -1,6 +1,22 @@
 $(function() {
-	document.addEventListener('scroll', shrinkHeader);
-	
+	// var cookie = sessionStorage.getItem('visited');
+	// if(!cookie) {
+		var header = $('#mainHeader');
+		header.css({
+			height: '100vh',
+			'font-size': '15px',
+			'animation-name': 'starter',
+			'animation-duration': '0.5s'
+		});
+		var nav = $('#mainNav');
+		nav.css({
+			bottom: 30 + 'px'
+		});
+		document.addEventListener('scroll', shrinkHeader);
+		var day = new Date();
+		var afterThirty = new Date(day.getTime() + 30 * 60 * 1000);
+		// sessionStorage.setItem('visited', 'true');
+	// }
 });
 
 function shrinkHeader(event) {
@@ -16,7 +32,6 @@ function shrinkHeader(event) {
 		nav.animate({
 			bottom: -55 + 'px'
 		}, 500);
-		console.log('yay');
 		removeEventListener('scroll', shrinkHeader)
 	}
 }
