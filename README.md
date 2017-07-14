@@ -1,5 +1,4 @@
-# Personal Site
-Find it at: http://belalsejouk.com
+# [belalsejouk.com](http://belalsejouk.com)
 
-#### Fun Fact
+### Fun Fact
 This website is fully done only in CSS & HTML. Including all the animations and navigation 🙂🎉.
