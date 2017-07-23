@@ -75,7 +75,7 @@ main.main > section {
 }
 
 main.main > section > .section-wrapper {
-	overflow: hidden;
+	/*overflow: hidden;*/
 	transition: transform 0.4s;
 }
 
@@ -98,6 +98,8 @@ main.main > section:nth-of-type(1) > .section-wrapper {
 	transform: translate(-120%, 110px);
 	-webkit-transform: translate(-120%, 110px);
 
+	transition: transform 0.4s;
+
 	animation-name: enterFirstCard;
 	animation-duration: 0.65s;
 }
@@ -108,14 +110,16 @@ main.main section#work article {
 	margin: 30px 2.5%;
 	border-radius: 15px;
 	overflow: hidden;
+	transform: scale(1);
+
 	box-shadow: 0 0 20px rgba(0,0,0,0.6);
 
-	transition: box-shadow 0.4s, transform 0.4s, top 0.4s;
+	transition: box-shadow 0.4s, transform 0.4s;
 }
 
 main.main section#work article:hover {
-	transform: scale(1.02);
-	-webkit-transform: scale(1.02);
+	transform: scale(1.02) translateY(-10px);
+	-webkit-transform: scale(1.02) translateY(-10px);
 	box-shadow: 0 0 23px rgba(0,0,0,0.4)
 }
 
@@ -132,7 +136,6 @@ main.main section#work article .link::before {
 	width: 100%;
 	z-index: 1;
 	border-radius: 15px;
-	background: transparent;
 	background: #999999; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
 	background: -webkit-linear-gradient(#fff 0%, rgba(255,255,255,0) 8%, rgba(255,255,255,0) 85%, #999 100%);
 	background: -o-linear-gradient(#fff 0%, rgba(255,255,255,0) 8%, rgba(255,255,255,0) 85%, #999 100%);
@@ -169,21 +172,18 @@ main.main section#work article .title {
 }
 
 input[type='checkbox']:checked + section .item.enterFromBottom {
-	opacity: 0;
 	animation-name: enterFromBottom;
-	animation-duration: 0.5s;
-	animation-delay: 0.7s;
-	animation-fill-mode: forwards;
+	animation-duration: 0.3s;
 }
 
 input[type='checkbox']:checked + section .item.enterFromBottom:nth-child(1) {
-	animation-delay: 0.4s;
+	animation-duration: 0.4s;
 }
 input[type='checkbox']:checked + section .item.enterFromBottom:nth-child(2) {
-	animation-delay: 0.5s;
+	animation-duration: 0.7s;
 }
 input[type='checkbox']:checked + section .item.enterFromBottom:nth-child(3) {
-	animation-delay: 0.6s;
+	animation-duration: 1s;
 }
 
 /* About Section */
@@ -195,6 +195,8 @@ main.main > section:nth-of-type(2) {
 main.main > section:nth-of-type(2) > .section-wrapper {
 	transform: translate(-120%, 176px);
 	-webkit-transform: translate(-120%, 176px);
+
+	transition: transform 0.4s;
 
 	animation-name: enterSecondCard;
 	animation-duration: 0.6s;
@@ -209,6 +211,8 @@ main.main > section:nth-of-type(3) {
 main.main > section:nth-of-type(3) > .section-wrapper {
 	transform: translate(-120%, 242px);
 	-webkit-transform: translate(-120%, 242px);
+
+	transition: transform 0.4s;
 
 	animation-name: enterThirdCard;
 	animation-duration: 0.6s;
@@ -411,8 +415,8 @@ input[type='checkbox']:checked + section main.content {
 
 @keyframes enterFromBottom {
 	0% {
-		transform: translateY(500px);
-		-webkit-transform: translateY(500px);
+		transform: translateY(1000px);
+		-webkit-transform: translateY(1000px);
 		opacity: 0;
 	}
 	100% {
