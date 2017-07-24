@@ -1,0 +1,16 @@
+---
+name: Work
+div_id: work
+---
+
+
+{% for post in site.data.work %}
+  <article class="item enterFromBottom">
+    <a class="link" href="{{post.url}}" target="_blank">
+      <span class="image">
+        <img src="{{post.image_url}}" />
+      </span>
+    </a>
+  </article>
+{% endfor %}
+<div class="clear-fix"></div>
