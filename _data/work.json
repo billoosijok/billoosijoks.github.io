@@ -1,8 +1,9 @@
 [
   {
     "name": "Homeless Portland",
-    "url" : "https://billoosijok.github.io/homelessportland/",
-    "image_url" : "/assets/homeless-portland.png"
+    "url" : "https://billoosijok.github.io/Homeless-Portland/",
+    "image_url" : "/assets/homeless-portland.jpg",
+    "display_title": true
   },
   {
     "name": "Beats Logo Animation",
@@ -21,6 +22,13 @@
     "name": "Timesheet",
     "url": "https://billoosijok.github.io/Timesheet/",
     "image_url" : "/assets/timesheet.jpg",
+    "display_title": true,
+    "title_color": "dark"
+  },
+  {
+    "name": "Slider Radio",
+    "url": "https://billoosijok.github.io/Slider-Raido/",
+    "image_url" : "/assets/slider-radio.jpg",
     "display_title": true,
     "title_color": "dark"
   }

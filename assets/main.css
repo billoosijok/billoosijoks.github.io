@@ -118,8 +118,8 @@ main.main section#work article {
 }
 
 main.main section#work article:hover {
-	transform: scale(1.02) translateY(-10px);
-	-webkit-transform: scale(1.02) translateY(-10px);
+	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
 	box-shadow: 0 0 23px rgba(0,0,0,0.4)
 }
 
@@ -177,23 +177,20 @@ main.main section#work article .title.top {
 }
 
 main.main section#work article .title.dark {
-	color: #666;
+	color: #444;
 	text-shadow: none;
 }
 
 input[type='checkbox']:checked + section .item.enterFromBottom {
 	animation-name: enterFromBottom;
-	animation-duration: 0.3s;
+	animation-duration: 0.6s;
 }
 
 input[type='checkbox']:checked + section .item.enterFromBottom:nth-child(1) {
 	animation-duration: 0.4s;
 }
 input[type='checkbox']:checked + section .item.enterFromBottom:nth-child(2) {
-	animation-duration: 0.7s;
-}
-input[type='checkbox']:checked + section .item.enterFromBottom:nth-child(3) {
-	animation-duration: 1s;
+	animation-duration: 0.5s;
 }
 
 /* About Section */
@@ -277,7 +274,7 @@ main.main > section .section-toggle {
 	left: 0;
 	margin-top: 0;
 	cursor: pointer;
-	transition: color 0.2s, opacity 0.3s, margin-top 0.3s;
+	transition: color 0.2s, opacity 0.3s;
 }
 
 main.main > section > .section-toggle:hover {
@@ -285,7 +282,9 @@ main.main > section > .section-toggle:hover {
 }
 
 main.main > section header .container {
-	padding: 5px 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 60px;
 	transition: padding 0.2s;
 }
 
@@ -315,9 +314,6 @@ input[type='checkbox']:checked + section > .section-wrapper {
 
 input[type='checkbox']:checked + section header .container {
 	position: relative;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 60px;
 }
 
 input[type='checkbox']:checked + section label.section-toggle {
@@ -358,7 +354,7 @@ input[type='checkbox']:checked + section main.content {
 	-webkit-overflow-scrolling: touch;
 
 	animation-name: enterFromBottom;
-	animation-duration: 0.2s;
+	animation-duration: 0.5s;
 }
 
 
@@ -367,6 +363,10 @@ input[type='checkbox']:checked + section main.content {
 	main.main section#work article {
 		width: 40%;
 		margin: 30px 4%;
+	}
+
+	main.main section#work article .title {
+		font-size: 25px;
 	}
 
 	main.main > section#contact .item {
@@ -412,6 +412,7 @@ input[type='checkbox']:checked + section main.content {
 	main.main > section#contact .item .image {
 		width: 30%;
 	}
+
 }
 
 @keyframes enterFromRight {
