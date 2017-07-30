@@ -6,14 +6,17 @@ div_id: work
 
 {% for post in site.data.work %}
   <article class="item enterFromBottom">
-    <a class="link" href="{{post.url}}" target="_blank">
+    <div class="cover">
+      <a class="link" href="{{post.url}}" target="_blank">
       <span class="image">
         <img src="{{post.image_url}}" />
       </span>
-      {% if post.display_title %}
+        {% if post.display_title %}
         <h3 class="title {{post.title_color}} {{post.title_position}}">{{post.name}}</h3>
-      {% endif %}
-    </a>
+        {% endif %}
+      </a>
+    </div>
   </article>
 {% endfor %}
+<div class="overlay"></div>
 <div class="clear-fix"></div>

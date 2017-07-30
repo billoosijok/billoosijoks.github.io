@@ -31,5 +31,12 @@
     "image_url" : "/assets/slider-radio.jpg",
     "display_title": true,
     "title_color": "dark"
+  },
+  {
+    "name": "Interactive Card",
+    "url": "https://github.com/billoosijok/react-native-interactive-card",
+    "image_url": "/assets/interactive-card.jpg",
+    "display_title": true,
+    "title_color": "dark"
   }
 ]
