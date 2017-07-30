@@ -171,6 +171,16 @@ main.main section#work article .title {
 	width: 100%;
 }
 
+main.main section#work article .title.top {
+	top: 0;
+	bottom: auto;
+}
+
+main.main section#work article .title.dark {
+	color: #666;
+	text-shadow: none;
+}
+
 input[type='checkbox']:checked + section .item.enterFromBottom {
 	animation-name: enterFromBottom;
 	animation-duration: 0.3s;
@@ -344,7 +354,7 @@ input[type='checkbox']:checked + section main.content {
 	height: 90%;
 	padding: 10px;
 	width: 100%;
-	/* overflow-y: scroll; */
+	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 
 	animation-name: enterFromBottom;

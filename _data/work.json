@@ -1,17 +1,27 @@
 [
   {
     "name": "Homeless Portland",
-    "url" : "https://billoosijok.github.io/Homeless-Portland//",
+    "url" : "https://billoosijok.github.io/homelessportland/",
     "image_url" : "/assets/homeless-portland.png"
   },
   {
     "name": "Beats Logo Animation",
     "url" : "https://vimeo.com/192069719",
-    "image_url" : "/assets/beats.jpg"
+    "image_url" : "/assets/beats.jpg",
+    "display_title": true,
+    "title_color": "dark"
   },
   {
-    "name": "Clark County Fire District 6 Website",
+    "name": "CCFD6 Website",
     "url" : "http://teamfire.clarkcgt.com",
-    "image_url" : "/assets/ccfd6.png"
+    "image_url" : "/assets/ccfd6.png",
+    "display_title": true
+  },
+  {
+    "name": "Timesheet",
+    "url": "https://billoosijok.github.io/Timesheet/",
+    "image_url" : "/assets/timesheet.jpg",
+    "display_title": true,
+    "title_color": "dark"
   }
 ]
