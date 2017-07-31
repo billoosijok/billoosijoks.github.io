@@ -15,14 +15,6 @@
     "description": "..."
   },
   {
-    "id": "beats",
-    "name": "Beats Logo Animation",
-    "url" : "https://vimeo.com/192069719",
-    "image_url" : "/assets/beats.jpg",
-    "css_class": "dark",
-    "description": "..."
-  },
-  {
     "id": "ccfd6",
     "name": "CCFD6 Website",
     "url" : "http://teamfire.clarkcgt.com",
