@@ -9,26 +9,32 @@ body {
 	overflow: hidden;
 }
 
-.clear-fix {
-	clear: both;
-}
-.container {
-	max-width: 900px;
-	margin: auto;
-	padding: 20px;
-}
-
 /* RESETs */
 a {
 	color: inherit;
 	text-decoration: none;
 }
 
+p, h4 {
+	margin: 0;
+	padding: 0;
+}
+
+/* GENERAL */
+.clear-fix {
+	clear: both;
+}
+.container {
+	max-width: 1200px;
+	margin: auto;
+	padding: 20px;
+}
+
 #wrapper {
 	position: relative;
 	height: 100vh;
 	width: 100vw;
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 
 header.main {
@@ -62,7 +68,7 @@ main.main > section {
 	left: 120%;
 	top: 0;
 	font-size: 30px;
-	border-radius: 700px;
+	border-radius: 100px;
 	transform: translate(0, 0);
 	-webkit-transform: translate(0, 0);
 	color: white;
@@ -70,12 +76,9 @@ main.main > section {
 	transition: color 0.2s, transform 0.4s, border-radius 0.25s;
 	-webkit-transition: color 0.2s, transform 0.4s, border-radius 0.25s;
 
-	/*animation-timing-function: cubic-bezier(.21,1.18,.20,1.0);*/
-	/*-webkit-animation-timing-function: cubic-bezier(.21,1.18,.20,1.0);*/
 }
 
 main.main > section > .section-wrapper {
-	/*overflow: hidden;*/
 	transition: transform 0.4s;
 }
 
@@ -110,9 +113,10 @@ main.main section#work article {
 	width: 28.3%;
 	margin: 30px 2.5%;
 	border-radius: 15px;
+	background-color: white;
 	overflow: hidden;
 	transform: scale(1);
-
+	position: relative;
 	box-shadow: 0 0 20px rgba(0,0,0,0.6);
 
 	transition: box-shadow 0.4s, transform 0.4s;
@@ -122,6 +126,79 @@ main.main section#work article:hover {
 	transform: scale(1.05);
 	-webkit-transform: scale(1.05);
 	box-shadow: 0 0 23px rgba(0,0,0,0.4)
+}
+
+main.main section#work article:hover .toggle-controller {
+	opacity: 0.8;
+}
+
+main.main section#work article .toggle {
+	display: none;
+}
+
+main.main section#work article .toggle:checked ~ .cover {
+	transform: translateY(100%);
+}
+
+main.main section#work article .toggle:checked ~ .content {
+	opacity: 1;
+	transform: scale(1);
+}
+
+main.main section#work article .cover {
+	transition: transform 0.3s;
+}
+
+main.main section#work article .content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	color: black;
+	display: block;
+	opacity: 0;
+	background-color: #FFFCF4;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	z-index: -1;
+	padding: 15px;
+	transform: scale(0.9);
+	transform-origin: bottom;
+	transition: opacity 0.2s, transform 0.2s;
+}
+
+main.main section#work article .content .toggle-controller {
+	color: #FF503A;
+	font-size: 20px;
+	border: none;
+}
+
+
+
+ main.main section#work article .toggle-controller {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #1760AA;
+	padding-top: 1px;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	font-size: 16px;
+	font-weight: 500;
+	text-align: center;
+	border: 1px solid #1760AA;
+	z-index: 3;
+	opacity: 0.5;
+	cursor: pointer;
+	box-shadow: 0 0 4px rgba(255,255,255,1);
+	text-shadow: 0 0 4px rgba(255,255,255,1);
+	transition: opacity 0.1s;
+}
+
+main.main section#work article .toggle-controller:hover {
+	opacity: 1;
 }
 
 main.main section#work article .link {
@@ -178,7 +255,7 @@ main.main section#work article .title.top {
 }
 
 main.main section#work article .title.dark {
-	color: #444;
+	color: #000;
 	text-shadow: none;
 }
 
@@ -410,7 +487,7 @@ input[type='checkbox']:checked + section main.content {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 	main.main section#work article {
 		width: 90%;
 		float: none;

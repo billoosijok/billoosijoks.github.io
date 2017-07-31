@@ -9,7 +9,7 @@
 
     <main class="main">
         {% for section in site.sections %}
-        <input type="checkbox" id="toggle-{{section.div_id}}" aria-hidden='true' style="display: none;">
+        <input type="checkbox" id="toggle-{{section.div_id}}" aria-hidden='true' style="display: none;" {% if section.div_id == 'work' %} checked {% endif %}>
         <section id="{{section.div_id}}">
             <div class="section-wrapper">
                 <header>

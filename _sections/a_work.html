@@ -6,15 +6,21 @@ div_id: work
 
 {% for post in site.data.work %}
   <article class="item enterFromBottom">
+    <input type="checkbox" class="toggle" id="{{post.id}}" aria-hidden="true" />
     <div class="cover">
+      <label class="toggle-controller" for="{{post.id}}">i</label>
       <a class="link" href="{{post.url}}" target="_blank">
       <span class="image">
         <img src="{{post.image_url}}" />
       </span>
-        {% if post.display_title %}
         <h3 class="title {{post.title_color}} {{post.title_position}}">{{post.name}}</h3>
-        {% endif %}
       </a>
+    </div>
+    <div class="content">
+      <label class="toggle-controller" for="{{post.id}}">X</label>
+      <div>
+        <p>{{post.description}}</p>
+      </div>
     </div>
   </article>
 {% endfor %}

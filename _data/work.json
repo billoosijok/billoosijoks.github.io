@@ -1,42 +1,61 @@
 [
   {
+    "id": "homeless-portland",
     "name": "Homeless Portland",
-    "url" : "https://billoosijok.github.io/Homeless-Portland/",
+    "url": "https://billoosijok.github.io/Homeless-Portland/",
     "image_url" : "/assets/homeless-portland.jpg",
-    "display_title": true
+    "description": "..."
   },
   {
+    "id": "tri_dir",
+    "name": "TRI Web Directory",
+    "url": "http://www.tworiversinstitute.org/find-a-professional/",
+    "image_url": "/assets/tri.jpg",
+    "title_color": "dark",
+    "description": "..."
+
+  },
+  {
+    "id": "beats",
     "name": "Beats Logo Animation",
     "url" : "https://vimeo.com/192069719",
     "image_url" : "/assets/beats.jpg",
-    "display_title": true,
-    "title_color": "dark"
+    "title_color": "dark",
+    "description": "..."
+
   },
   {
+    "id": "ccfd6",
     "name": "CCFD6 Website",
     "url" : "http://teamfire.clarkcgt.com",
     "image_url" : "/assets/ccfd6.png",
-    "display_title": true
+    "description": "..."
+
   },
   {
+    "id": "timesheet",
     "name": "Timesheet",
     "url": "https://billoosijok.github.io/Timesheet/",
     "image_url" : "/assets/timesheet.jpg",
-    "display_title": true,
-    "title_color": "dark"
+    "title_color": "dark",
+    "description": "..."
+
   },
   {
+    "id": "slider-radio",
     "name": "Slider Radio",
     "url": "https://github.com/billoosijok/slider-radio",
     "image_url" : "/assets/slider-radio.jpg",
-    "display_title": true,
-    "title_color": "dark"
+    "title_color": "dark",
+    "description": "..."
+
   },
   {
+    "id": "react-native-interactive-card",
     "name": "Interactive Card",
     "url": "https://github.com/billoosijok/react-native-interactive-card",
     "image_url": "/assets/interactive-card.jpg",
-    "display_title": true,
-    "title_color": "dark"
+    "title_color": "dark",
+    "description": "..."
   }
 ]
