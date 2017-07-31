@@ -123,8 +123,8 @@ main.main section#work article {
 }
 
 main.main section#work article:hover {
-	transform: scale(1.05);
-	-webkit-transform: scale(1.05);
+	transform: scale(1.02);
+	-webkit-transform: scale(1.02);
 	box-shadow: 0 0 23px rgba(0,0,0,0.4)
 }
 
@@ -255,7 +255,7 @@ main.main section#work article .title.top {
 }
 
 main.main section#work article .title.dark {
-	color: #000;
+	color: #333;
 	text-shadow: none;
 }
 
