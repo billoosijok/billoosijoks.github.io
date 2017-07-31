@@ -11,18 +11,16 @@
     "name": "TRI Web Directory",
     "url": "http://www.tworiversinstitute.org/find-a-professional/",
     "image_url": "/assets/tri.jpg",
-    "title_color": "dark",
+    "css_class": "dark_bg",
     "description": "..."
-
   },
   {
     "id": "beats",
     "name": "Beats Logo Animation",
     "url" : "https://vimeo.com/192069719",
     "image_url" : "/assets/beats.jpg",
-    "title_color": "dark",
+    "css_class": "dark",
     "description": "..."
-
   },
   {
     "id": "ccfd6",
@@ -37,7 +35,7 @@
     "name": "Timesheet",
     "url": "https://billoosijok.github.io/Timesheet/",
     "image_url" : "/assets/timesheet.jpg",
-    "title_color": "dark",
+    "css_class": "dark",
     "description": "..."
 
   },
@@ -46,7 +44,7 @@
     "name": "Slider Radio",
     "url": "https://github.com/billoosijok/slider-radio",
     "image_url" : "/assets/slider-radio.jpg",
-    "title_color": "dark",
+    "css_class": "dark",
     "description": "..."
 
   },
@@ -62,7 +60,7 @@
     "name": "Beats Logo Animation",
     "url" : "https://vimeo.com/192069719",
     "image_url" : "/assets/beats.jpg",
-    "title_color": "dark",
+    "css_class": "dark",
     "description": "..."
 
   }

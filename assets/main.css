@@ -258,6 +258,9 @@ main.main section#work article .title.dark {
 	color: #333;
 	text-shadow: none;
 }
+main.main section#work article .title.dark_bg {
+	background-color: #333;
+}
 
 input[type='checkbox']:checked + section .item.enterFromBottom {
 	animation-name: enterFromBottom;
