@@ -27,22 +27,22 @@
     "url": "https://billoosijok.github.io/Timesheet/",
     "image_url" : "/assets/timesheet.jpg",
     "css_class": "dark",
-    "description": "..."
+    "description": "A simple timesheet logger. Built with JavaScript"
   },
   {
     "id": "slider-radio",
     "name": "Slider Radio",
-    "url": "https://github.com/billoosijok/slider-radio",
+    "url": "https://billoosijok.github.io/slider-radio/",
     "image_url" : "/assets/slider-radio.jpg",
     "css_class": "dark",
-    "description": "..."
+    "description": "A tool for developers. Helps create animated slider radio buttons."
   },
   {
     "id": "react-native-interactive-card",
     "name": "Interactive Card",
     "url": "https://github.com/billoosijok/react-native-interactive-card",
     "image_url": "/assets/interactive-card.jpg",
-    "description": "..."
+    "description": "A tool for developers. Helps create interactive user interface cards."
   },
   {
     "id": "beats",
@@ -50,6 +50,6 @@
     "url" : "https://vimeo.com/192069719",
     "image_url" : "/assets/beats.jpg",
     "css_class": "dark",
-    "description": "..."
+    "description": "An animation composition animating the Beatsaudio™ logo"
   }
 ]

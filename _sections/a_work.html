@@ -8,7 +8,7 @@ div_id: work
   <article class="item enterFromBottom">
     <input type="checkbox" class="toggle" id="{{post.id}}" aria-hidden="true" />
     <div class="cover">
-      <!--<label class="toggle-controller" for="{{post.id}}">i</label>-->
+      <label class="toggle-controller" for="{{post.id}}">i</label>
       <a class="link" href="{{post.url}}" target="_blank">
       <span class="image">
         <img src="{{post.image_url}}" />
@@ -19,7 +19,16 @@ div_id: work
     <div class="content">
       <label class="toggle-controller" for="{{post.id}}">X</label>
       <div>
-        <p>{{post.description}}</p>
+        <p class="description">{{post.description}}</p>
+        {% if post.technologies %}
+          <input type="checkbox" class="toggle" id="{{post.id}}-technologies" aria-hidden="true" />
+          <label for="{{post.id}}-technologies">Technologies</label>
+          <ul class="technologies">
+            {% for technology in post.technologies %}
+              <li>{{site.data.technologies[technology].image}}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
       </div>
     </div>
   </article>

@@ -1,0 +1,8 @@
+{
+  "php" : {"image": "/assets/php.png"},
+  "html5" : {"image": "/assets/html5.png"},
+  "css3" : {"image": "/assets/css3.png"},
+  "squarespace" : {"image" : "/assets/php.png"},
+  "wordpress": {"image" : "/assets/php.png"},
+  "react": {"image": "/assets/react.png"}
+}

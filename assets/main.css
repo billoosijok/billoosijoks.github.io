@@ -15,10 +15,6 @@ a {
 	text-decoration: none;
 }
 
-p, h4 {
-	margin: 0;
-	padding: 0;
-}
 
 /* GENERAL */
 .clear-fix {
@@ -127,6 +123,11 @@ main.main section#work article:hover {
 	box-shadow: 0 0 23px rgba(0,0,0,0.3)
 }
 
+main.main section#work article p {
+	margin: 0;
+	padding: 0;
+}
+
 main.main section#work article:hover .toggle-controller {
 	opacity: 0.8;
 }
@@ -163,6 +164,7 @@ main.main section#work article .content {
 	-webkit-overflow-scrolling: touch;
 	z-index: -1;
 	padding: 15px;
+	padding-top: 40px;
 	transform: scale(0.9);
 	transform-origin: bottom;
 	transition: opacity 0.2s, transform 0.2s;
@@ -173,7 +175,6 @@ main.main section#work article .content .toggle-controller {
 	font-size: 20px;
 	border: none;
 }
-
 
 
  main.main section#work article .toggle-controller {
@@ -262,6 +263,11 @@ main.main section#work article .title.dark_bg {
 	background-color: #333;
 }
 
+main.main section#work article .content .description {
+	font-size: 16px;
+	color: #666;
+}
+
 input[type='checkbox']:checked + section .item.enterFromBottom {
 	animation-name: enterFromBottom;
 	animation-duration: 0.6s;
@@ -287,6 +293,18 @@ main.main > section:nth-of-type(2) > .section-wrapper {
 
 	animation-name: enterSecondCard;
 	animation-duration: 0.6s;
+}
+
+main.main > section#about p {
+	font-size: 23px;
+}
+
+main.main > section#about #personal-pic {
+	display: block;
+	float: right;
+	border-radius: 10px;
+	margin: 20px;
+	max-width: 300px;
 }
 
 /* Contact Section */
@@ -450,8 +468,12 @@ input[type='checkbox']:checked + section main.content {
 	}
 
 	main.main > section#contact .item {
-		width: 46%;
+		width: 90%;
 		margin: 30px 2%;
+	}
+
+	main.main > section#contact .item .image {
+		width: 30%;
 	}
 
 	input[type='checkbox']:checked + section {
@@ -489,9 +511,7 @@ input[type='checkbox']:checked + section main.content {
 		margin: 30px auto;
 	}
 
-	main.main > section#contact .item .image {
-		width: 30%;
-	}
+
 
 }
 
