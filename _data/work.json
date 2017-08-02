@@ -4,23 +4,22 @@
     "name": "Homeless Portland",
     "url": "https://billoosijok.github.io/Homeless-Portland/",
     "image_url" : "/assets/homeless-portland.jpg",
-    "description": "..."
+    "description": "A website to raise awareness on Portland's homelessness issue."
   },
   {
     "id": "tri_dir",
     "name": "TRI Web Directory",
     "url": "http://www.tworiversinstitute.org/find-a-professional/",
-    "image_url": "/assets/tri.jpg",
+    "image_url": "/assets/tri_dir.jpg",
     "css_class": "dark_bg",
-    "description": "..."
+    "description": "A custom web directory page within a Squarespace website. I implemented it using a custom post type, in order to make it easy for the client to add more people to the directory."
   },
   {
     "id": "ccfd6",
     "name": "CCFD6 Website",
     "url" : "http://teamfire.clarkcgt.com",
     "image_url" : "/assets/ccfd6.png",
-    "description": "..."
-
+    "description": "A donation website for Clark County Fire District 6. In my team, I was in charge of implementing a custom WordPress theme to fit the client’s need. (Please note that this URL is not the official URL of the fire district as they are still working on content before making it live)"
   },
   {
     "id": "timesheet",
@@ -29,7 +28,6 @@
     "image_url" : "/assets/timesheet.jpg",
     "css_class": "dark",
     "description": "..."
-
   },
   {
     "id": "slider-radio",
@@ -38,7 +36,6 @@
     "image_url" : "/assets/slider-radio.jpg",
     "css_class": "dark",
     "description": "..."
-
   },
   {
     "id": "react-native-interactive-card",
@@ -54,6 +51,5 @@
     "image_url" : "/assets/beats.jpg",
     "css_class": "dark",
     "description": "..."
-
   }
 ]
