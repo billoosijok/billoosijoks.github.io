@@ -320,34 +320,34 @@ main.main > section:nth-of-type(3) > .section-wrapper {
 	animation-duration: 0.6s;
 }
 
-main.main > section#contact *::selection {
+main.main > section#connect *::selection {
 	background-color: orange;
 }
-main.main > section#contact *::-moz-selection {
+main.main > section#connect *::-moz-selection {
 	background-color: orange;
 }
 
-main.main > section#contact .item {
+main.main > section#connect .item {
 	float: left;
 	width: 31%;
 	margin: 10px 1%;
 	text-align: center;
 }
 
-main.main > section#contact .item a {
+main.main > section#connect .item a {
 		display: block;
 }
 
-main.main > section#contact .item .image {
+main.main > section#connect .item .image {
 	width: 70%;
 	margin: auto;
 }
 
-main.main > section#contact .item img {
+main.main > section#connect .item img {
 	max-width: 100%;
 }
 
-main.main > section#contact .item p {
+main.main > section#connect .item p {
 	margin: 0;
 	font-size: 20px;
 }
@@ -385,7 +385,7 @@ main.main > section h2 {
 	font-weight: 600;
 	margin: 0;
 	text-align: center;
-	transition: font-size 0.4s;
+	transition: font-size 0.6s;
 }
 
 main.main > section p {
@@ -473,12 +473,12 @@ input[type='checkbox']:checked + section main.content {
 		font-size: 25px;
 	}
 
-	main.main > section#contact .item {
+	main.main > section#connect .item {
 		width: 90%;
 		margin: 30px 2%;
 	}
 
-	main.main > section#contact .item .image {
+	main.main > section#connect .item .image {
 		width: 30%;
 	}
 
@@ -532,17 +532,17 @@ input[type='checkbox']:checked + section main.content {
 		box-shadow: 0 0 12px rgba(0,0,0,0.4);
 	}
 
-	main.main > section#contact .item {
+	main.main > section#connect .item {
 		float: none;
 		width: 80%;
 		margin: 30px auto;
 	}
 
-	main.main > section#contact .item p {
+	main.main > section#connect .item p {
 		font-size: 15px;
 	}
 
-	main.main > section#contact .item img {
+	main.main > section#connect .item img {
 		width: 200px;
 	}
 
