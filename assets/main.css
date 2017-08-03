@@ -28,6 +28,17 @@ a {
 	padding: 20px;
 }
 
+::-webkit-scrollbar {
+	width: 10px;
+		background-color: inherit;
+		margin-right: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+		background-color: rgba(0,0,0,0.6);
+    border-radius: 4px;
+}
+
 #wrapper {
 	position: relative;
 	height: 100vh;
@@ -414,7 +425,6 @@ input[type='checkbox']:checked + section > .section-wrapper {
 input[type='checkbox']:checked + section header .container {
 	position: relative;
 }
-
 
 input[type='checkbox']:checked + section label.section-toggle {
 	margin-top: 25px;
