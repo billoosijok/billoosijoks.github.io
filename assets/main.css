@@ -519,7 +519,7 @@ input[type='checkbox']:checked + section main.content {
 	}
 
 	input[type='checkbox']:checked + section label.section-toggle {
-		font-size: 20px;
+		font-size: 16px;
 		width: auto;
 		/*margin: 0;*/
 	}
@@ -535,6 +535,14 @@ input[type='checkbox']:checked + section main.content {
 		float: none;
 		width: 80%;
 		margin: 30px auto;
+	}
+
+	main.main > section#contact .item p {
+		font-size: 15px;
+	}
+
+	main.main > section#contact .item img {
+		width: 200px;
 	}
 
 
