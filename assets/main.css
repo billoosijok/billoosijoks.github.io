@@ -343,7 +343,7 @@ main.main > section#contact .item .image {
 }
 
 main.main > section#contact .item img {
-	width: 100%;
+	max-width: 100%;
 }
 
 main.main > section#contact .item p {
@@ -536,7 +536,6 @@ input[type='checkbox']:checked + section main.content {
 		width: 80%;
 		margin: 30px auto;
 	}
-
 
 
 }
