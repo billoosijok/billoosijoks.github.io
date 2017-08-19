@@ -291,6 +291,19 @@ main.main section#work article .content .description {
 main.main section#work label[for="for_developers_toggle"] {
 	font-size: 25px;
 }
+
+main.main section#work .toggle_section {
+	padding: 0 30px;
+}
+
+main.main section#work label[for="for_developers_toggle"] {
+	cursor: pointer;
+}
+
+main.main section#work label[for="for_developers_toggle"]:hover {
+	color: #ccc;
+}
+
 main.main section#work label[for="for_developers_toggle"] .arrow-icon {
 	transform: rotateZ(90deg);
 	display: inline-block;
@@ -299,8 +312,8 @@ main.main section#work label[for="for_developers_toggle"] .arrow-icon {
 }
 
 main.main section#work .for_developers {
-	margin-top: -10%;
-	transition: margin-top 0.4s, opacity 0.4s;
+	margin-top: -30%;
+	transition: margin-top 0.2s, opacity 0.4s;
 	opacity: 0;
 	visibility: hidden;
 }
@@ -311,7 +324,7 @@ main.main section#work #for_developers_toggle:checked ~ .for_developers {
 	margin-top: 0;
 }
 
-main.main section#work #for_developers_toggle:checked ~ label[for="for_developers_toggle"] .arrow-icon {
+main.main section#work #for_developers_toggle:checked ~ .toggle_section .arrow-icon {
 	transform: rotateZ(-90deg);
 }
 

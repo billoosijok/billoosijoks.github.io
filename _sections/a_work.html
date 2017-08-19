@@ -12,10 +12,11 @@ div_id: work
     <div class="clear-fix"></div>
 
 </div>
-
 <input type="checkbox" class="toggle" id="for_developers_toggle"/>
-<label for="for_developers_toggle">Developer <span class="arrow-icon"> &#10095; </span></label>
 
+<div class="toggle_section">
+    <label for="for_developers_toggle"><span class="arrow-icon"> &#10095; </span> Developer</label>
+</div>
 <div class="for_developers">
     {% for post in site.data.work.for_developers %}
 
