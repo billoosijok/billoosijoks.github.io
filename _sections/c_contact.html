@@ -2,28 +2,14 @@
 name: Connect
 div_id: connect
 ---
+{% for item in site.data.contact_info %}
+  <div class="item enterFromBottom">
+    <a target="_blank" href="{{item.link}}">
+      <div class="image">
+        <img src="{{item.icon}}">
+      </div>
+      <p>{{item.handle}}</p>
+    </a>
+  </div>
+{% endfor %}
 
-<div class="item enterFromBottom">
-  <a target="_blank" href="mailto:b.sejouk@gmail.com">
-    <div class="image">
-      <img src="/assets/envelope-icon.svg">
-    </div>
-    <p>b.sejouk@gmail.com</p>
-  </a>
-</div>
-<div class="item enterFromBottom">
-  <a target="_blank" href="https://twitter.com/billoosijok">
-    <div class="image">
-      <img src="/assets/twitter-icon.svg">
-    </div>
-    <p>@billoosijok</p>
-  </a>
-</div>
-<div class="item enterFromBottom">
-  <a target="_blank" href="https://github.com/billoosijok">
-    <div class="image">
-      <img src="/assets/github-icon.svg">
-    </div>
-    <p>/billoosijok</p>
-  </a>
-</div>

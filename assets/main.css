@@ -39,6 +39,15 @@ a {
     border-radius: 4px;
 }
 
+.spacer {
+	height: 200px;
+	clear: both;
+}
+
+.toggle {
+	display: none;
+}
+
 #wrapper {
 	position: relative;
 	height: 100vh;
@@ -279,6 +288,33 @@ main.main section#work article .content .description {
 	color: #666;
 }
 
+main.main section#work label[for="for_developers_toggle"] {
+	font-size: 25px;
+}
+main.main section#work label[for="for_developers_toggle"] .arrow-icon {
+	transform: rotateZ(90deg);
+	display: inline-block;
+	margin: 0 5px;
+	transition: transform 0.2s;
+}
+
+main.main section#work .for_developers {
+	margin-top: -10%;
+	transition: margin-top 0.4s, opacity 0.4s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+main.main section#work #for_developers_toggle:checked ~ .for_developers {
+	visibility: visible;
+	opacity: 1;
+	margin-top: 0;
+}
+
+main.main section#work #for_developers_toggle:checked ~ label[for="for_developers_toggle"] .arrow-icon {
+	transform: rotateZ(-90deg);
+}
+
 input[type='checkbox']:checked + section .item.enterFromBottom {
 	animation-name: enterFromBottom;
 	animation-duration: 0.6s;
@@ -318,7 +354,6 @@ main.main > section#about #personal-pic {
 /* Contact Section */
 main.main > section:nth-of-type(3) {
 	background-color: #6fc0ed;
-
 }
 
 main.main > section:nth-of-type(3) > .section-wrapper {

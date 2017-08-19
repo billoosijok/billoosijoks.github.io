@@ -1,0 +1,17 @@
+[
+  {
+    "handle" : "b.sejouk@gmail.com",
+    "link": "mailto:b.sejouk@gmail.com",
+    "icon" : "/assets/envelope-icon.svg"
+  },
+  {
+    "handle" : "@billoosijok",
+    "link": "https://twitter.com/billoosijok",
+    "icon" : "/assets/twitter-icon.svg"
+  },
+  {
+    "handle" : "/billoosijok",
+    "link": "https://github.com/billoosijok",
+    "icon" : "/assets/github-icon.svg"
+  }
+]

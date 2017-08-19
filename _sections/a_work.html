@@ -3,35 +3,26 @@ name: Work
 div_id: work
 ---
 
+<div class="for_anyone">
+    {% for post in site.data.work.for_anyone %}
 
-{% for post in site.data.work %}
-  <article class="item enterFromBottom">
-    <input type="checkbox" class="toggle" id="{{post.id}}" aria-hidden="true" />
-    <div class="cover">
-      <label class="toggle-controller" for="{{post.id}}">i</label>
-      <a class="link" href="{{post.url}}" target="_blank">
-      <span class="image">
-        <img src="{{post.image_url}}" />
-      </span>
-        <h3 class="title {{post.css_class}}">{{post.name}}</h3>
-      </a>
-    </div>
-    <div class="content">
-      <label class="toggle-controller" for="{{post.id}}">X</label>
-      <div>
-        <p class="description">{{post.description}}</p>
-        {% if post.technologies %}
-          <input type="checkbox" class="toggle" id="{{post.id}}-technologies" aria-hidden="true" />
-          <label for="{{post.id}}-technologies">Technologies</label>
-          <ul class="technologies">
-            {% for technology in post.technologies %}
-              <li>{{site.data.technologies[technology].image}}</li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-      </div>
-    </div>
-  </article>
-{% endfor %}
-<div class="overlay"></div>
-<div class="clear-fix"></div>
+      {% include work_post.html %}
+
+    {% endfor %}
+    <div class="clear-fix"></div>
+
+</div>
+
+<input type="checkbox" class="toggle" id="for_developers_toggle"/>
+<label for="for_developers_toggle">Developer <span class="arrow-icon"> &#10095; </span></label>
+
+<div class="for_developers">
+    {% for post in site.data.work.for_developers %}
+
+      {% include work_post.html %}
+
+    {% endfor %}
+    <div class="clear-fix"></div>
+
+</div>
+<div class="spacer"></div>
