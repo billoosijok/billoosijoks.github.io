@@ -631,8 +631,8 @@ input[type='checkbox']:checked + section main.content {
 
 @keyframes enterFirstCard {
 	0% {
-		transform: translate(-120%, 500px);
-		-webkit-transform: translate(-120%, 500px);
+		transform: translate(-120%, 100vh);
+		-webkit-transform: translate(-120%, 100vh);
 	}
 	100% {
 		transform: translate(-120%, 110px);
@@ -642,8 +642,8 @@ input[type='checkbox']:checked + section main.content {
 
 @keyframes enterSecondCard {
 	0% {
-		transform: translate(-120%, 1000px);
-		-webkit-transform: translate(-120%, 1000px);
+		transform: translate(-120%, 200vh);
+		-webkit-transform: translate(-120%, 200vh);
 	}
 	100% {
 		transform: translate(-120%, 176px);
@@ -653,8 +653,8 @@ input[type='checkbox']:checked + section main.content {
 
 @keyframes enterThirdCard {
 	0% {
-		transform: translate(-120%, 1500px);
-		-webkit-transform: translate(-120%, 1500px);
+		transform: translate(-120%, 300vh);
+		-webkit-transform: translate(-120%, 300vh);
 	}
 	100% {
 		transform: translate(-120%, 242px);
