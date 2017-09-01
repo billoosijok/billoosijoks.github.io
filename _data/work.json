@@ -1,11 +1,21 @@
 {
   "for_anyone" : [
     {
+      "id": "tristar-website",
+      "name": "Tristar Website",
+      "url": "https://www.tristardentalclinic.com",
+      "image_url" : "/assets/tristar.jpg",
+      "css_class": "dark",
+      "description": "A website for Tri-Star Dental Clinic. The website is built on Squarespace. I implemented a custom Squarespace template.",
+      "technologies": ["squarespace", "less"]
+    }
+    ,{
       "id": "homeless-portland",
       "name": "Homeless Portland",
       "url": "https://billoosijok.github.io/Homeless-Portland/",
       "image_url" : "/assets/homeless-portland.jpg",
-      "description": "A website to raise awareness on Portland's homelessness issue."
+      "description": "A website to raise awareness on Portland's homelessness issue.",
+      "technologies": ["js", "css3", "html5"]
     },
     {
       "id": "tri_dir",
@@ -13,14 +23,16 @@
       "url": "http://www.tworiversinstitute.org/find-a-professional/",
       "image_url": "/assets/tri_dir.jpg",
       "css_class": "dark_bg",
-      "description": "A custom web directory page within a Squarespace website. I implemented it using a custom post type, in order to make it easy for the client to add more people to the directory."
+      "description": "A custom web directory page within a Squarespace website. I implemented it using a custom post type, in order to make it easy for the client to add more people to the directory.",
+      "technologies": ["squarespace", "js", "css3"]
     },
     {
       "id": "ccfd6",
       "name": "CCFD6 Website",
       "url" : "http://teamfire.clarkcgt.com",
       "image_url" : "/assets/ccfd6.png",
-      "description": "A donation website for Clark County Fire District 6. In my team, I was in charge of implementing a custom WordPress theme to fit the client’s need. (Please note that this URL is not the official URL of the fire district as they are still working on content before making it live)"
+      "description": "A donation website for Clark County Fire District 6. In my team, I was in charge of implementing a custom WordPress theme to fit the client’s need. (Please note that this URL is not the official URL of the fire district as they are still working on content before making it live)",
+      "technologies": ["wordpress", "php", "js", "css3", "html5"]
     },
     {
       "id": "timesheet",
@@ -28,7 +40,8 @@
       "url": "https://billoosijok.github.io/Timesheet/",
       "image_url" : "/assets/timesheet.jpg",
       "css_class": "dark",
-      "description": "A simple timesheet logger. Built with JavaScript"
+      "description": "A simple timesheet logger. Built with JavaScript",
+      "technologies": ["js", "css3", "html5"]
     },
     {
       "id": "beats",
@@ -36,7 +49,9 @@
       "url" : "https://vimeo.com/192069719",
       "image_url" : "/assets/beats.jpg",
       "css_class": "dark",
-      "description": "An animation composition animating the Beatsaudio™ logo"
+      "description": "An animation composition animating the Beatsaudio™ logo",
+      "technologies": ["after-effects"]
+
     }
   ],
   "for_developers" : [
@@ -46,14 +61,16 @@
       "url": "https://billoosijok.github.io/slider-radio/",
       "image_url" : "/assets/slider-radio.jpg",
       "css_class": "dark",
-      "description": "A tool for developers. Helps create animated slider radio buttons."
+      "description": "A tool for developers. Helps create animated slider radio buttons.",
+      "technologies": ["js", "css3", "html5"]
     },
     {
       "id": "react-native-interactive-card",
       "name": "Interactive Card",
       "url": "https://github.com/billoosijok/react-native-interactive-card",
       "image_url": "/assets/interactive-card.jpg",
-      "description": "A tool for developers. Helps create interactive user interface cards."
+      "description": "A tool for developers. Helps create interactive user interface cards.",
+      "technologies": ["react-native"]
     }
   ]
 }

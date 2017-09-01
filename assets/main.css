@@ -12,6 +12,9 @@ body {
 	overflow: hidden;
 }
 
+h4 {
+    font-size: 22px;
+}
 /* RESETs */
 a {
 	color: inherit;
@@ -268,6 +271,7 @@ main.main section#work article .title {
 	text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
 	padding: 10px 15px;
 	width: 100%;
+	z-index: 20;
 }
 
 main.main section#work article .title.top {
@@ -286,6 +290,41 @@ main.main section#work article .title.dark_bg {
 main.main section#work article .content .description {
 	font-size: 16px;
 	color: #666;
+}
+main.main section#work article .technologies h4 {
+	margin-bottom: 10px;
+}
+main.main section#work article .technologies-list {
+	padding: 0;
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+
+main.main section#work article .technologies-list li {
+	display: inline-block;
+	width: 20%;
+	padding-right: 10px;
+	margin-left: 10px;
+	border-right: 1px solid rgba(0,0,0,0.2);
+	max-height: 50px;
+    opacity: 0.7;
+    transition: opacity 0.1s;
+}
+
+main.main section#work article .technologies-list li:hover {
+    opacity: 1;
+}
+
+main.main section#work article .technologies-list li:last-child {
+	border-right: none;
+}
+
+main.main section#work article .technologies-list li img {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	margin: auto;
 }
 
 main.main section#work label[for="for_developers_toggle"] {

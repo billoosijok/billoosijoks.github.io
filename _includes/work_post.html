@@ -13,14 +13,16 @@
         <label class="toggle-controller" for="{{post.id}}">X</label>
         <div>
             <p class="description">{{post.description}}</p>
+
             {% if post.technologies %}
-            <input type="checkbox" class="toggle" id="{{post.id}}-technologies" aria-hidden="true" />
-            <label for="{{post.id}}-technologies">Technologies</label>
-            <ul class="technologies">
-                {% for technology in post.technologies %}
-                <li>{{site.data.technologies[technology].image}}</li>
-                {% endfor %}
-            </ul>
+            <div class="technologies">
+                <h4>Technologies</h4>
+                <ul class="technologies-list">
+                    {% for technology in post.technologies %}
+                    <li><img src="{{site.data.technologies[technology].image}}" alt="{{site.data.technologies[technology].name}}" title="{{site.data.technologies[technology].name}}"/></li>
+                    {% endfor %}
+                </ul>
+            </div>
             {% endif %}
         </div>
     </div>

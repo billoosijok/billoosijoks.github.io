@@ -1,8 +1,12 @@
 {
-  "php" : {"image": "/assets/php.png"},
-  "html5" : {"image": "/assets/html5.png"},
-  "css3" : {"image": "/assets/css3.png"},
-  "squarespace" : {"image" : "/assets/php.png"},
-  "wordpress": {"image" : "/assets/php.png"},
-  "react": {"image": "/assets/react.png"}
+  "php" :         {"name": "PHP",         "image": "/assets/php.png"      },
+  "html5" :       {"name": "HTML5",       "image": "/assets/html5.png"    },
+  "css3" :        {"name": "CSS3",        "image": "/assets/css3.png"     },
+  "js" :          {"name": "JavaScript",  "image": "/assets/js-logo.svg"   },
+  "squarespace" : {"name": "Squarespace", "image" : "/assets/squarespace-logo.svg" },
+  "wordpress":    {"name": "WordPress",   "image" : "/assets/wordpress-logo.svg"     },
+  "react":        {"name": "React",       "image": "/assets/react.png"    },
+  "react-native": {"name": "React Native","image": "/assets/react.png"    },
+  "less":         {"name": "LESS",        "image": "/assets/less-logo.png"},
+  "after-effects":{"name": "Adobe After Effects", "image": "/assets/ae-logo.jpg"}
 }

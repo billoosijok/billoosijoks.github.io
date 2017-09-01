@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="232 211 122 108">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_1);
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        font-size: 120px;
+        font-family: KohinoorBangla-Bold, Kohinoor Bangla;
+        font-weight: 700;
+      }
+    </style>
+    <clipPath id="clip-Artboard_1">
+      <rect x="232" y="211" width="122" height="108"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard – 1" class="cls-1">
+    <rect id="Rectangle_1" data-name="Rectangle 1" class="cls-2" width="157" height="157" transform="translate(232 211)"/>
+    <text id="JS" class="cls-3" transform="translate(232 307)"><tspan x="0" y="0">JS</tspan></text>
+  </g>
+</svg>
