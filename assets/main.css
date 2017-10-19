@@ -469,10 +469,6 @@ main.main > section .section-toggle {
 	transition: color 0.2s, opacity 0.3s;
 }
 
-main.main > section > .section-toggle:hover {
-	background-color: rgba(0,0,0,0.5);
-}
-
 main.main > section header .container {
 	padding-top: 20px;
 	/*padding-left: 60px;*/
