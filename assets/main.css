@@ -340,7 +340,7 @@ main.main section#work label[for="for_developers_toggle"] {
 }
 
 main.main section#work label[for="for_developers_toggle"]:hover {
-	color: #ccc;
+	opacity: 0.8;
 }
 
 main.main section#work label[for="for_developers_toggle"] .arrow-icon {
@@ -394,6 +394,9 @@ main.main > section:nth-of-type(2) > .section-wrapper {
 	animation-duration: 0.6s;
 }
 
+input[type='checkbox']:not(:checked) + section:nth-of-type(2):hover {
+	color: #ccc;
+}
 
 main.main > section#about #personal-pic {
 	display: block;
@@ -523,7 +526,7 @@ input[type='checkbox']:checked + section label.section-toggle {
 
 input[type='checkbox']:checked + section label.section-toggle:hover {
 	background-color: transparent;
-	color: #ccc;
+	opacity: 0.8;
 }
 
 input[type='checkbox']:checked + section label.section-toggle:before {
@@ -553,6 +556,11 @@ input[type='checkbox']:checked + section main.content {
 
 @media (max-width: 800px) {
 
+	input[type='checkbox']:not(:checked) + section:nth-of-type(1):hover,
+	input[type='checkbox']:not(:checked) + section:nth-of-type(2):hover,
+	input[type='checkbox']:not(:checked) + section:nth-of-type(3):hover {
+		color: #ddd;
+	}
 	main.main > section p {
 		font-size: 15px;
 	}
