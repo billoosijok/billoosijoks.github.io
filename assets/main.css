@@ -72,7 +72,8 @@ header.main h1 {
 
 header.main h4 {
 	margin-top: 0;
-	font-weight: 500;
+	font-weight: 400;
+	font-size: 18px;
 }
 
 main.main {
@@ -117,8 +118,8 @@ input[type='checkbox']:checked + section:nth-of-type(1) {
 
 main.main > section:nth-of-type(1) > .section-wrapper {
 	position: relative;
-	transform: translate(-120%, 110px);
-	-webkit-transform: translate(-120%, 110px);
+	transform: translate(-120%, 150px);
+	-webkit-transform: translate(-120%, 150px);
 
 	transition: transform 0.4s;
 
@@ -384,8 +385,8 @@ main.main > section:nth-of-type(2) {
 }
 
 main.main > section:nth-of-type(2) > .section-wrapper {
-	transform: translate(-120%, 176px);
-	-webkit-transform: translate(-120%, 176px);
+	transform: translate(-120%, 216px);
+	-webkit-transform: translate(-120%, 216px);
 
 	transition: transform 0.4s;
 
@@ -408,8 +409,8 @@ main.main > section:nth-of-type(3) {
 }
 
 main.main > section:nth-of-type(3) > .section-wrapper {
-	transform: translate(-120%, 242px);
-	-webkit-transform: translate(-120%, 242px);
+	transform: translate(-120%, 282px);
+	-webkit-transform: translate(-120%, 282px);
 
 	transition: transform 0.4s;
 
@@ -669,8 +670,8 @@ input[type='checkbox']:checked + section main.content {
 		-webkit-transform: translate(-120%, 100vh);
 	}
 	100% {
-		transform: translate(-120%, 110px);
-		-webkit-transform: translate(-120%, 110px);
+		transform: translate(-120%, 150px);
+		-webkit-transform: translate(-120%, 150px);
 	}
 }
 
@@ -680,8 +681,8 @@ input[type='checkbox']:checked + section main.content {
 		-webkit-transform: translate(-120%, 200vh);
 	}
 	100% {
-		transform: translate(-120%, 176px);
-		-webkit-transform: translate(-120%, 176px);
+		transform: translate(-120%, 216px);
+		-webkit-transform: translate(-120%, 216px);
 	}
 }
 
@@ -691,7 +692,7 @@ input[type='checkbox']:checked + section main.content {
 		-webkit-transform: translate(-120%, 300vh);
 	}
 	100% {
-		transform: translate(-120%, 242px);
-		-webkit-transform: translate(-120%, 242px);
+		transform: translate(-120%, 282px);
+		-webkit-transform: translate(-120%, 282px);
 	}
 }
