@@ -27,14 +27,6 @@
       "technologies": ["squarespace", "js", "css3"]
     },
     {
-      "id": "ccfd6",
-      "name": "CCFD6 Website",
-      "url" : "http://teamfire.clarkcgt.com",
-      "image_url" : "/assets/ccfd6.png",
-      "description": "A donation website for Clark County Fire District 6. In my team, I was in charge of implementing a custom WordPress theme to fit the client’s need. (Please note that this URL is not the official URL of the fire district as they are still working on content before making it live)",
-      "technologies": ["wordpress", "php", "js", "css3", "html5"]
-    },
-    {
       "id": "timesheet",
       "name": "Timesheet",
       "url": "https://billoosijok.github.io/Timesheet/",
