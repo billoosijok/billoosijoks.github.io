@@ -1,6 +1,15 @@
 {
   "for_anyone" : [
     {
+      "id": "cpw-website",
+      "name": "CPW Website",
+      "url": "https://www.collaborativeprofessionalsofwashington.org/33test/",
+      "image_url" : "/assets/cpw-website.jpg",
+      "css_class": "dark",
+      "description": "A website for the organization of Collaborative Professionals of Washington. The website is built on WordPress. <br> I implemented a highly modified child theme. I implemented many custom features such as: events, custom layouts, etc.. I also integrated the theme with a third-party membership software (aMember).",
+      "technologies": ["wordpress", "sass", "js", "html5", "css3", "php"]
+    },
+    {
       "id": "tristar-website",
       "name": "Tristar Website",
       "url": "https://www.tristardentalclinic.com",
