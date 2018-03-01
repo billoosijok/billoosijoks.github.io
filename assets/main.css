@@ -202,6 +202,7 @@ main.main section#work article .content .toggle-controller {
 
  main.main section#work article .toggle-controller {
 	position: absolute;
+	 background-color: white;
 	top: 10px;
 	left: 10px;
 	color: #1760AA;
