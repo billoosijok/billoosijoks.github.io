@@ -203,7 +203,7 @@ main.main section#work article .content .toggle-controller {
  main.main section#work article .toggle-controller {
 	position: absolute;
 	top: 10px;
-	right: 10px;
+	left: 10px;
 	color: #1760AA;
 	padding-top: 1px;
 	border-radius: 50%;
