@@ -1,6 +1,14 @@
 {
   "for_anyone" : [
     {
+      "id": "drop-ist",
+      "name": "Drop.ist",
+      "url": "https://drop.ist",
+      "image_url" : "/assets/dropist.jpg",
+      "description": "A file sharing web application. Why is it different than GDrive, OneDrive, etc ..? Because you don't need to have any logins. Try it out on <a href=\"https://drop.ist\">drop.ist</a>",
+      "technologies": ["angular", "sass", "nodejs", "firebase", "gcloud"]
+    },
+    {
       "id": "cpw-website",
       "name": "CPW Website",
       "url": "https://www.collaborativeprofessionalsofwashington.org/",
