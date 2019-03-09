@@ -9,5 +9,8 @@
   "react-native": {"name": "React Native","image": "/assets/react.png"    },
   "less":         {"name": "LESS",        "image": "/assets/less-logo.png"},
   "sass":         {"name": "SASS",        "image": "/assets/sass-logo.png"},
+  "angular":      {"name": "Angular",     "image": "/assets/angular.svg"},
+  "nodejs":       {"name": "NodeJS",     "image": "/assets/nodejs.svg"},
+  "firebase":     {"name": "Firebase",     "image": "/assets/firebase.svg"},
   "after-effects":{"name": "Adobe After Effects", "image": "/assets/ae-logo.jpg"}
 }
