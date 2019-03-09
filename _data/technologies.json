@@ -11,6 +11,7 @@
   "sass":         {"name": "SASS",        "image": "/assets/sass-logo.png"},
   "angular":      {"name": "Angular",     "image": "/assets/angular.svg"},
   "nodejs":       {"name": "NodeJS",     "image": "/assets/nodejs.svg"},
+  "gcloud":       {"name": "Google Cloud Platform",     "image": "/assets/gcloud.svg"},
   "firebase":     {"name": "Firebase",     "image": "/assets/firebase.svg"},
   "after-effects":{"name": "Adobe After Effects", "image": "/assets/ae-logo.jpg"}
 }
