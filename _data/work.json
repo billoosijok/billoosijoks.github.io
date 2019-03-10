@@ -9,6 +9,14 @@
       "technologies": ["angular", "nodejs", "firebase", "gcloud", "sass"]
     },
     {
+      "id": "blue-byte",
+      "name": "BlueByte Website",
+      "url": "https://bluebyte.biz",
+      "image_url" : "/assets/bluebyte.jpg",
+      "description": "A React based website for BlueByte LLC",
+      "technologies": ["react", "sass"]
+    },
+    {
       "id": "cpw-website",
       "name": "CPW Website",
       "url": "https://www.collaborativeprofessionalsofwashington.org/",
