@@ -12,6 +12,8 @@ div_id: work
     <div class="clear-fix"></div>
 
 </div>
+
+{% comment %}
 <input type="checkbox" class="toggle" id="for_developers_toggle"/>
 
 <div class="toggle_section">
@@ -19,11 +21,13 @@ div_id: work
 </div>
 <div class="for_developers">
     {% for post in site.data.work.for_developers %}
-
+    
       {% include work_post.html %}
+    
 
     {% endfor %}
     <div class="clear-fix"></div>
 
 </div>
+{% endcomment %}
 <!--<div class="spacer"></div>-->
