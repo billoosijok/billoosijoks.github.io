@@ -11,7 +11,7 @@
     {
       "id": "blue-byte",
       "name": "BlueByte Website",
-      "url": "https://bluebyte.biz",
+      "url": "http://bluebyte.biz",
       "image_url" : "/assets/bluebyte.jpg",
       "description": "A React based website for BlueByte LLC",
       "technologies": ["react", "sass"]
