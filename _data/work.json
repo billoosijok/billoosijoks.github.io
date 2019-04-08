@@ -9,14 +9,6 @@
       "technologies": ["angular", "nodejs", "firebase", "gcloud", "sass"]
     },
     {
-      "id": "blue-byte",
-      "name": "BlueByte Website",
-      "url": "http://bluebyte.biz",
-      "image_url" : "/assets/bluebyte.jpg",
-      "description": "A React based website for BlueByte LLC",
-      "technologies": ["react", "sass"]
-    },
-    {
       "id": "cpw-website",
       "name": "CPW Website",
       "url": "https://www.collaborativeprofessionalsofwashington.org/",
@@ -31,15 +23,6 @@
       "image_url" : "/assets/homeless-portland.jpg",
       "description": "A website to raise awareness on Portland's homelessness issue.",
       "technologies": ["js", "css3", "html5"]
-    },
-    {
-      "id": "beats",
-      "name": "Beats Logo Animation",
-      "url" : "https://vimeo.com/192069719",
-      "image_url" : "/assets/beats.jpg",
-      "css_class": "dark",
-      "description": "An animation composition animating the Beatsaudio™ logo",
-      "technologies": ["after-effects"]
     }
   ],
   "for_developers" : [
